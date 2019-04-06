@@ -49,7 +49,7 @@ class _AuthPageState extends State<AuthPage> {
       obscureText: true,
       validator: (String value) {
         if (value.isEmpty || value.length < 6) {
-          return 'Password invalid';
+          return 'Password should be 6+ characters long.';
         }
       },
       onSaved: (String value) {
